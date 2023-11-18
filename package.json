@@ -1,0 +1,26 @@
+{
+  "alternateName": "repo, the elioWay",
+  "description": "A library of utility functions, the elioWay.",
+  "disambiguatingDescription": "spawn abundant, living soul, the elioWay",
+  "identifier": "belial",
+  "mainEntityOfPage": "SoftwareSourceCode",
+  "name": "belial",
+  "sameAs": "https://thing.theElioWay.com/",
+  "subjectOf": "elioangels",
+  "url": "https://belial.elioangels.theElioWay.com",
+  "SoftwareSourceCode": {
+    "codeSampleType": "experimental",
+    "targetProduct": "elioangels"
+  },
+  "WebPage": {
+    "breadcrumb": [ "elioway", "elioangels",  "belial" ]
+  }, 
+  "devDependencies": {
+    "prettier": "latest"
+  },
+  "license": "MIT",
+  "private": true,  
+  "scripts": {
+    "prettier": "prettier --list-different --write \"**/*.{css,html,js,json,md,mjs,scss,ts,yaml}\""
+  }
+}
