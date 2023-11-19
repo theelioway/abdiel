@@ -1,36 +1,53 @@
-![](https://elioway.gitlab.io/elioangels/belial/elio-belial-logo.png)
+![](https://elioway.gitlab.io/elioangels/abdiel/elio-abdiel-logo.png)
 
 > Functional, **the elioWay**
 
-# belial
+# abdiel
 
-A library of utility functions.
+A library of utility functions:
 
-- [belial Documentation](https://elioway.gitlab.io/elioangels/belial/)
+| function name                 | returns                                             |
+| ----------------------------- | --------------------------------------------------- |
+| `arrayAlways`                 | always an array                                     |
+| `arrayDifference`             | difference between arrays                           |
+| `arrayUnion`                  | overlap between arrays                              |
+| `arrayXor`                    | array parts don't cancel                            |
+| `valueIsDate`                 | true if valid `Date` object                         |
+| `valueIsArrayAndMeaningless`  | true if all array values effectively undefined      |
+| `valueIsLengthlessString`     | true if string and lengthless                       |
+| `valueIsLengthlessArray`      | true if array and lengthless                        |
+| `valueIsMeaningful`           | true if truly meaningful                            |
+| `valueIsMeaningfullyFalsy`    | true if `0` `false` `Infinity`                      |
+| `valueIsMeaningless`          | true if `undefined` `null`, etc                     |
+| `valueIsObjectAndMeaningless` | true if all object properties effectively undefined |
+| `valueToStringIsLengthless`   | true if string conversion lengthless                |
+| ----------------------------- | --------------------------------------------------- |
+
+- [abdiel Documentation](https://elioway.gitlab.io/elioangels/abdiel/)
 
 ## Prerequisites
 
-- [belial Prerequisites](https://elioway.gitlab.io/elioangels/belial/installing.html)
+- [abdiel Prerequisites](https://elioway.gitlab.io/elioangels/abdiel/installing.html)
 
 ## Installing
 
-- [Installing belial](https://elioway.gitlab.io/elioangels/belial/installing.html)
+- [Installing abdiel](https://elioway.gitlab.io/elioangels/abdiel/installing.html)
 
 ## Seeing is Believing
 
 ```
-You're seeing it.
+npm run test
 ```
 
 - [elioangels Quickstart](https://elioway.gitlab.io/elioangels/quickstart.html)
-- [belial Quickstart](https://elioway.gitlab.io/elioangels/belial/quickstart.html)
+- [abdiel Quickstart](https://elioway.gitlab.io/elioangels/abdiel/quickstart.html)
 
 # Credits
 
-- [belial Credits](https://elioway.gitlab.io/elioangels/belial/credits.html)
+- [abdiel Credits](https://elioway.gitlab.io/elioangels/abdiel/credits.html)
 
 ## License
 
 [MIT](license)
 
-![](https://elioway.gitlab.io/elioangels/belial/apple-touch-icon.png)
+![](https://elioway.gitlab.io/elioangels/abdiel/apple-touch-icon.png)

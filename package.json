@@ -1,26 +1,38 @@
 {
-  "alternateName": "repo, the elioWay",
+  "alternateName": "javascript library, the elioWay",
   "description": "A library of utility functions, the elioWay.",
-  "disambiguatingDescription": "spawn abundant, living soul, the elioWay",
-  "identifier": "belial",
+  "disambiguatingDescription": "none with more zeal adored The Deity, and divine commands obeyed, the elioWay",
+  "identifier": "abdiel",
   "mainEntityOfPage": "SoftwareSourceCode",
-  "name": "belial",
+  "name": "@elioway/abdiel",
   "sameAs": "https://thing.theElioWay.com/",
-  "subjectOf": "elioangels",
-  "url": "https://belial.elioangels.theElioWay.com",
+  "subjectOf": "theElioWay",
+  "url": "https://abdiel.theElioWay.theElioWay.com",
   "SoftwareSourceCode": {
     "codeSampleType": "experimental",
-    "targetProduct": "elioangels"
+    "targetProduct": "theElioWay"
   },
   "WebPage": {
-    "breadcrumb": [ "elioway", "elioangels",  "belial" ]
-  }, 
+    "breadcrumb": [
+      "elioway",
+      "theElioWay",
+      "abdiel"
+    ]
+  },
   "devDependencies": {
-    "prettier": "latest"
+    "chai": "^4.3.10",
+    "lodash-es": "^4.17.21",
+    "mocha": "^10.2.0",
+    "prettier": "3.1.0"
   },
   "license": "MIT",
-  "private": true,  
+  "private": true,
   "scripts": {
-    "prettier": "prettier --list-different --write \"**/*.{css,html,js,json,md,mjs,scss,ts,yaml}\""
-  }
+    "prettier": "prettier --list-different --write \"**/*.{css,html,js,json,md,mjs,scss,ts,yaml}\"",
+    "abdiel": "node ./abdiel.js",
+    "test": "mocha"
+  },
+  "bin": "./bin/index.js",
+  "main": "./src/index.js",
+  "type": "module"
 }
