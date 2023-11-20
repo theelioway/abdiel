@@ -7,11 +7,12 @@
  *
  * @tutorial
  * Alternative version:
- * >> const arrayAnyway = (value) => Array.isArray(value) ? value : [value];
+ * >> const arrayAnyway = (valueOrArray) =>
+ * >>     Array.isArray(valueOrArray) ? valueOrArray : [valueOrArray];
  *  Is the current version better?
  *
- * @param {*} value - The value to be converted to an array or returned as an
- *                    array if it already is one.
+ * @param {*} valueOrArray - The value to be converted to an array or
+ *                           returned as an array if it already is one.
  * @returns {Array} The input value as an array. If the input is already an
  *                  array, it is returned without modification; if the input
  *                  is not an array, it is wrapped in an array.
@@ -23,6 +24,6 @@
  * arrayAlways(undefined);// Returns [undefined]
  * arrayAlways({});       // Returns [{}]
  */
-export const arrayAlways = value => [value].flat()
+export const arrayAlways = valueOrArray => [valueOrArray].flat()
 
 export default arrayAlways

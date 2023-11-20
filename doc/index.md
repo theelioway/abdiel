@@ -16,6 +16,9 @@ Not so much a replacement **lodash** as it is a smaller set of purposeful functi
 - `arrayDifference`: Difference between arrays.
 - `arrayUnion`: Overlap between arrays.
 - `arrayXor`: Array parts don't cancel.
+- `objectAlways`: Always return object with property
+- `objectPicker`: Pick from object properties |
+- `objectPruner`: Combine filter to prune an object entries |
 - `valueIsDate`: True if a valid Date object.
 - `valueIsArrayAndMeaningless`: True if all array values are effectively undefined.
 - `valueIsLengthlessString`: True if a string and lengthless.

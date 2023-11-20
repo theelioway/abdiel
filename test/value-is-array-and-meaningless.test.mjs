@@ -8,13 +8,15 @@ const isNonZeroNumber = n => typeof n === "number" && n !== 0
 
 describe("value | valueIsArrayAndMeaningless", () => {
   it("knows when an array is full of meaningless values", () => {
-    valueIsArrayAndMeaningless([], isNonZeroNumber).should.be.true
-    valueIsArrayAndMeaningless([0, 0, 0], isNonZeroNumber).should.be.true
-    valueIsArrayAndMeaningless([1, 0, 2], isNonZeroNumber).should.be.false
+    const isArrayAndNonZeroNumber = valueIsArrayAndMeaningless(isNonZeroNumber)
+    isArrayAndNonZeroNumber([]).should.be.true
+    isArrayAndNonZeroNumber([0, 0, 0]).should.be.true
+    isArrayAndNonZeroNumber([1, 0, 2]).should.be.false
   })
   it("rejects non-arrays", () => {
-    valueIsArrayAndMeaningless(0, isNonZeroNumber).should.be.false
-    valueIsArrayAndMeaningless({}, isNonZeroNumber).should.be.false
-    valueIsArrayAndMeaningless("text", isNonZeroNumber).should.be.false
+    const isArrayAndNonZeroNumber = valueIsArrayAndMeaningless(isNonZeroNumber)
+    isArrayAndNonZeroNumber(0).should.be.false
+    isArrayAndNonZeroNumber({}).should.be.false
+    isArrayAndNonZeroNumber("text").should.be.false
   })
 })

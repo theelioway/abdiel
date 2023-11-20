@@ -6,14 +6,15 @@
  * property values pass the meaningfulness test defined by the filter
  * function.
  *
- * @param {*} value - The value to be checked. This function checks if this
- *                    value is an object and applies the filter function to
- *                    its property values.
  * @param {Function} filterMeaningful - A function that tests each property
  *                                      value of the object for meaningfulness.
  *                                      It should return `true` for meaningful
  *                                      values and `false` for meaningless
  *                                      ones.
+ * @param {*} value - The value to be checked. This function checks if this
+ *                    value is an object and applies the filter function to
+ *                    its property values.
+ *
  * @returns {boolean} Returns `true` if `value` is an object and all its
  *                    property values are considered meaningless by the
  *                    `filterMeaningful` function.
@@ -27,7 +28,7 @@
  * isObjectWithOnlyEmptyStrings("not an object", isNonEmptyString); // false
  * isObjectWithOnlyEmptyStrings({}, isNonEmptyString); // true
  */
-export const valueIsObjectAndMeaningless = (value, filterMeaningful) =>
+export const valueIsObjectAndMeaningless = filterMeaningful => value =>
   typeof value === "object" && !Object.values(value).some(filterMeaningful)
 
 export default valueIsObjectAndMeaningless

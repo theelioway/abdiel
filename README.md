@@ -12,8 +12,11 @@ A library of utility functions:
 | `arrayDifference`             | difference between arrays                           |
 | `arrayUnion`                  | overlap between arrays                              |
 | `arrayXor`                    | array parts don't cancel                            |
-| `valueIsDate`                 | true if valid `Date` object                         |
+| `objectAlways`                | always return object with property                  |
+| `objectPicker`                | pick from object properties                         |
+| `objectPruner`                | combine filter to prune an object entries           |
 | `valueIsArrayAndMeaningless`  | true if all array values effectively undefined      |
+| `valueIsDate`                 | true if valid `Date` object                         |
 | `valueIsLengthlessString`     | true if string and lengthless                       |
 | `valueIsLengthlessArray`      | true if array and lengthless                        |
 | `valueIsMeaningful`           | true if truly meaningful                            |

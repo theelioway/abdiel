@@ -35,8 +35,10 @@ export function valueIsMeaningful(value) {
   if (valueIsLengthlessArray(value)) return false
   if (valueIsLengthlessString(value)) return false
   if (valueToStringIsLengthless(value)) return false
-  if (valueIsArrayAndMeaningless(value, valueIsMeaningful)) return false
-  if (valueIsObjectAndMeaningless(value, valueIsMeaningful)) return false
+  const isArrayAndMeaningless = valueIsArrayAndMeaningless(valueIsMeaningful)
+  if (isArrayAndMeaningless(value)) return false
+  const isObjectAndMeaningless = valueIsObjectAndMeaningless(valueIsMeaningful)
+  if (isObjectAndMeaningless(value)) return false
   // If none of the above, the value is considered meaningful.
   return true
 }

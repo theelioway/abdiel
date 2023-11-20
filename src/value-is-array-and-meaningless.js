@@ -25,7 +25,7 @@
  * valueIsArrayAndMeaningless("not an array", isNonZeroNumber); // false
  * valueIsArrayAndMeaningless([], isNonZeroNumber); // true
  */
-export const valueIsArrayAndMeaningless = (value, filterMeaningful) =>
+export const valueIsArrayAndMeaningless = filterMeaningful => value =>
   Array.isArray(value) && !value.some(filterMeaningful)
 
 export default valueIsArrayAndMeaningless
