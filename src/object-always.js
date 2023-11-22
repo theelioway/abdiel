@@ -21,12 +21,8 @@
  */
 
 export const objectAlways = propertyName => valueOrObject =>
-  new Object({
-    [propertyName]:
-      typeof valueOrObject == "object" &&
-      valueOrObject.hasOwnProperty(propertyName)
-        ? valueOrObject[propertyName]
-        : valueOrObject,
-  })
+  typeof valueOrObject == "object" && valueOrObject.hasOwnProperty(propertyName)
+    ? valueOrObject[propertyName]
+    : valueOrObject
 
 export default objectAlways
