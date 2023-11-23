@@ -10,6 +10,7 @@ A library of utility functions:
 | ----------------------------- | --------------------------------------------------- |
 | `arrayAlways`                 | always an array                                     |
 | `arrayDifference`             | difference between arrays                           |
+| `arraySortByProperty`         | returns a sort comparer given a prop name           |
 | `arrayUnion`                  | overlap between arrays                              |
 | `arrayXor`                    | array parts don't cancel                            |
 | `objectAlways`                | always return object with property                  |
@@ -17,8 +18,8 @@ A library of utility functions:
 | `objectPruner`                | combine filter to prune an object entries           |
 | `valueIsArrayAndMeaningless`  | true if all array values effectively undefined      |
 | `valueIsDate`                 | true if valid `Date` object                         |
-| `valueIsLengthlessString`     | true if string and lengthless                       |
 | `valueIsLengthlessArray`      | true if array and lengthless                        |
+| `valueIsLengthlessString`     | true if string and lengthless                       |
 | `valueIsMeaningful`           | true if truly meaningful                            |
 | `valueIsMeaningfullyFalsy`    | true if `0` `false` `Infinity`                      |
 | `valueIsMeaningless`          | true if `undefined` `null`, etc                     |

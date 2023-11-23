@@ -58,13 +58,14 @@ let xorTests = [
 
 let speedTests = 5000
 
-describe("lodash | array | _.<arrayXor>", () => {
-  for (let [l1, l2, expectarrayXor] of xorTests) {
-    it(`lodash version for ${l1} + ${l2} == ${expectarrayXor}`, () => {
-      let res = union(difference(l1, l2), difference(l2, l1))
-      res.should.have.members(expectarrayXor)
-    })
-  }
+describe("array | arrayXor lodash comparison", () => {
+  it("`arrayXor` same as lodash ` union(difference,difference)`", () => {
+    for (let [l1, l2] of xorTests) {
+      let abdielRes = arrayXor(l1, l2)
+      let lodashRes = union(difference(l1, l2), difference(l2, l1))
+      abdielRes.should.eql(lodashRes)
+    }
+  })
 })
 
 describe("array | arrayXor", () => {

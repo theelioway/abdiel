@@ -43,13 +43,14 @@ let differenceTests = [
 
 let speedTests = 11111
 
-describe("lodash | array | difference", () => {
-  for (let [l1, l2, expectDifference] of differenceTests) {
-    it(`spots whats missing in l2 ${l1} / ${l2} == ${expectDifference}`, () => {
-      let res = difference(l1, l2)
-      res.should.have.members(expectDifference)
-    })
-  }
+describe("array | arrayDifference lodash comparison", () => {
+  it("`arrayDifference` same as lodash `difference`", () => {
+    for (let [l1, l2] of differenceTests) {
+      let abdielRes = arrayDifference(l1, l2)
+      let lodashRes = difference(l1, l2)
+      abdielRes.should.eql(lodashRes)
+    }
+  })
 })
 
 describe("array | arrayDifference", () => {

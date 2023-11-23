@@ -22,13 +22,14 @@ let unionTests = [
 
 let speedTests = 11111
 
-describe("lodash | array | union", () => {
-  for (let [l1, l2, expectUnity] of unionTests) {
-    it(`totally united ${l1} + ${l2} == ${expectUnity}`, () => {
-      let res = union(l1, l2)
-      res.should.have.members(expectUnity)
-    })
-  }
+describe("array | arrayUnion lodash comparison", () => {
+  it("`arrayUnion` same as lodash `union`", () => {
+    for (let [l1, l2] of unionTests) {
+      let abdielRes = arrayUnion(l1, l2)
+      let lodashRes = union(l1, l2)
+      abdielRes.should.eql(lodashRes)
+    }
+  })
 })
 
 describe("array | arrayUnion", () => {

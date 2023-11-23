@@ -1,6 +1,6 @@
 export { default as arrayAlways } from "./array-always.js"
 export { default as arrayDifference } from "./array-difference.js"
-export { default as arrayObjectSort } from "./array-object-sort.js"
+export { default as arraySortByProperty } from "./array-sort-by-property.js"
 export { default as arrayUnion } from "./array-union.js"
 export { default as arrayXor } from "./array-xor.js"
 export { default as dateTimestamp } from "./date-timestamp.js"
