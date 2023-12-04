@@ -25,6 +25,7 @@ describe("module | abdiel", () => {
       "valueIsMeaningfullyFalsy",
       "valueIsMeaningless",
       "valueIsObjectAndMeaningless",
+      "valueToImpliedType",
       "valueToStringIsLengthless",
     ])
   })
