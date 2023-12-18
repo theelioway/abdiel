@@ -6,12 +6,12 @@ should()
 
 describe("value | valueToImpliedType", () => {
   it("returns a suitable blank", () => {
-    valueToImpliedType().should.eql("")
+    should().equal(valueToImpliedType(), undefined)
     valueToImpliedType("").should.eql("")
   })
   it("returns real booleans", () => {
-    valueToImpliedType(false).should.eql(false)
     valueToImpliedType(true).should.eql(true)
+    valueToImpliedType(false).should.eql(false)
   })
   it("returns real dates", () => {
     valueToImpliedType(new Date(Date.parse("2023-02-22"))).should.eql(

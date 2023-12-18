@@ -17,6 +17,7 @@ describe("module | abdiel", () => {
       "objectAlways",
       "objectPicker",
       "objectPruner",
+      "stringCaseKebab",
       "valueIsArrayAndMeaningless",
       "valueIsDate",
       "valueIsLengthlessArray",

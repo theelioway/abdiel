@@ -1,6 +1,5 @@
 "use strict"
 import { should } from "chai"
-
 import objectPropertiesSort from "../src/object-sort-properties.js"
 
 should()

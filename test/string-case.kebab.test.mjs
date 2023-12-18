@@ -1,6 +1,6 @@
 "use strict"
 import { should } from "chai"
-import { stringCaseKebab } from "../src/string-case-kebab.js"
+import stringCaseKebab from "../src/string-case-kebab.js"
 
 should()
 

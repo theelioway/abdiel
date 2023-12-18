@@ -12,10 +12,10 @@
 export const stringCaseKebab = string =>
   string
     .toString()
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
     .replace(/\s+/g, " ")
     .trim()
     .toLowerCase()
-    .split(" ")
-    .join("-")
+    .replace(/\s+/g, "-")
 
 export default stringCaseKebab

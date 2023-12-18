@@ -1,7 +1,7 @@
 "use strict"
 import { should } from "chai"
 import { union } from "lodash-es"
-import { arrayUnion } from "../src/array-union.js"
+import arrayUnion from "../src/array-union.js"
 
 should()
 

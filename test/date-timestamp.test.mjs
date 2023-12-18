@@ -1,26 +1,29 @@
-// Import the function to be tested
-import { dateTimestamp } from "./your-module" // Replace 'your-module' with the actual module path
+"use strict"
+import { should } from "chai"
+import dateTimestamp from "../src/date-timestamp.js"
 
-// Test case 1: Testing with a specific date
-test("Converts a Date object to a timestamp string", () => {
-  // Create a Date object for a specific date and time
-  const testDate = new Date("2023-12-17T16:54:01.234Z")
+should()
 
-  // Call the dateTimestamp function with the testDate
-  const result = dateTimestamp(testDate)
+describe("dateTimestamp", () => {
+  it("converts a Date object to a timestamp string", () => {
+    // Create a Date object for a specific date and time
+    const testDate = new Date("2023-12-17T16:54:01.234Z")
 
-  // Assert that the result matches the expected timestamp string
-  expect(result).toBe("20231217165401234")
-})
+    // Call the dateTimestamp function with the testDate
+    const result = dateTimestamp(testDate)
 
-// Test case 2: Testing with the current date
-test("Converts the current Date object to a timestamp string", () => {
-  // Get the current date and time
-  const currentDate = new Date()
+    // Assert that the result is equal to the expected timestamp string
+    result.should.equal("20231217165401234")
+  })
 
-  // Call the dateTimestamp function with the current date
-  const result = dateTimestamp(currentDate)
+  it("converts the current Date object to a timestamp string", () => {
+    // Get the current date and time
+    const currentDate = new Date()
 
-  // Assert that the result is a string containing only numeric characters
-  expect(result).toMatch(/^\d+$/)
+    // Call the dateTimestamp function with the current date
+    const result = dateTimestamp(currentDate)
+
+    // Assert that the result is a string containing only numeric characters
+    result.should.match(/^\d+$/)
+  })
 })

@@ -29,8 +29,6 @@ import valueIsDate from "./value-is-date.js"
  * const convertedEmpty = valueToImpliedType(emptyValue);     // Returns "" (Empty string)
  */
 export const valueToImpliedType = value => {
-  // `undefined`, etc, implies empty string.
-  value = value || ""
   if (typeof value === "boolean") {
     return value
   } else if (typeof value === "number") {
@@ -42,12 +40,13 @@ export const valueToImpliedType = value => {
   } else if (value && !isNaN(Date.parse(value))) {
     return new Date(Date.parse(value))
   } else if (
-    value.toString().toLowerCase() === "true" ||
-    value.toString().toLowerCase() === "false"
+    String(value).toLowerCase() === "true" ||
+    String(value).toLowerCase() === "false"
   ) {
     return Boolean(value)
+  } else {
+    return value
   }
-  return value // Return the value as-is if no specific conversion is needed
 }
 
 export default valueToImpliedType
