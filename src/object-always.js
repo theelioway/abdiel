@@ -5,7 +5,7 @@
  * object and has the property, the property's value is taken from the object.
  * Otherwise, the provided value itself is used as the property's value.
  *
- * @param {string} propertyName - The name of the property to set on the new
+ * @param {string} propName - The name of the property to set on the new
  *                                object.
  * @param {*} valueOrObject - The value to set, or an object from which to
  *                            extract the property value.
@@ -20,9 +20,9 @@
  * const yetAnotherObject = ensureName({ age: 30 }); // { name: { age: 30 } }
  */
 
-export const objectAlways = propertyName => valueOrObject =>
-  typeof valueOrObject == "object" && valueOrObject.hasOwnProperty(propertyName)
-    ? valueOrObject[propertyName]
+export const objectAlways = propName => valueOrObject =>
+  typeof valueOrObject == "object" && valueOrObject.hasOwnProperty(propName)
+    ? valueOrObject[propName]
     : valueOrObject
 
 export default objectAlways

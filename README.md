@@ -16,6 +16,7 @@ A library of utility functions:
 | `objectAlways`                | always return object with property                  |
 | `objectPicker`                | pick from object properties                         |
 | `objectPruner`                | combine filter to prune an object entries           |
+| `objectCloner`                | parse stringify an object                           |
 | `valueIsArrayAndMeaningless`  | true if all array values effectively undefined      |
 | `valueIsDate`                 | true if valid `Date` object                         |
 | `valueIsLengthlessArray`      | true if array and lengthless                        |

@@ -1,4 +1,5 @@
 "use strict"
+
 /**
  * Checks if a given value is an array that is empty.
  *

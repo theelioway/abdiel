@@ -12,10 +12,10 @@
  */
 export const objectPicker = propertyNames => object =>
   propertyNames.reduce(
-    (acc, propertyName) =>
+    (acc, propName) =>
       new Object({
         ...acc,
-        [propertyName]: object[propertyName],
+        [propName]: object[propName],
       }),
     {},
   )

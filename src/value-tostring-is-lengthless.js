@@ -1,4 +1,5 @@
 "use strict"
+
 /**
  * Checks if the given value is falsy or its string representation is
  * lengthless (empty or whitespace only).

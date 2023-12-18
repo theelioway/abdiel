@@ -19,12 +19,12 @@ import arrayUnion from "./array-union.js"
  * >> xor([true, false], [false]) === [true]
  * >> xor([true, false], [false, true]) === []
  */
-export const arrayXor = (l1, l2) => {
-  let s1 = new Set(l1)
-  let s2 = new Set(l2)
+export const arrayXor = (array1, array2) => {
+  let set1 = new Set(array1)
+  let set2 = new Set(array2)
   return arrayUnion(
-    [...s1].filter(x => !s2.has(x)),
-    [...s2].filter(x => !s1.has(x)),
+    [...set1].filter(x => !set2.has(x)),
+    [...set2].filter(x => !set1.has(x)),
   )
 }
 export default arrayXor

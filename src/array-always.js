@@ -9,7 +9,7 @@
  * Alternative version:
  * >> const arrayAnyway = (valueOrArray) =>
  * >>     Array.isArray(valueOrArray) ? valueOrArray : [valueOrArray];
- *  Is the current version better?
+ * @todo Is the current version better?
  *
  * @param {*} valueOrArray - The value to be converted to an array or
  *                           returned as an array if it already is one.

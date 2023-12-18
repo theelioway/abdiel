@@ -1,13 +1,13 @@
 {
-  "alternateName": "javascript library, the elioWay",
-  "description": "A library of utility functions, the elioWay.",
-  "disambiguatingDescription": "none with more zeal adored The Deity, and divine commands obeyed, the elioWay",
+  "alternateName": "a javascript library, the elioWay",
+  "description": "A library of utility functions",
+  "disambiguatingDescription": "none with more zeal adored The Deity, and divine commands obeyed",
   "identifier": "abdiel",
   "mainEntityOfPage": "SoftwareSourceCode",
   "name": "@elioway/abdiel",
   "sameAs": "https://thing.theElioWay.com/",
   "subjectOf": "theElioWay",
-  "url": "https://abdiel.theElioWay.theElioWay.com",
+  "url": "https://abdiel.theElioWay.com",
   "SoftwareSourceCode": {
     "codeSampleType": "experimental",
     "targetProduct": "theElioWay"
@@ -19,20 +19,20 @@
       "abdiel"
     ]
   },
+  "bin": "./bin/index.js",
   "devDependencies": {
     "chai": "^4.3.10",
     "lodash-es": "^4.17.21",
     "mocha": "^10.2.0",
-    "prettier": "3.1.0"
+    "prettier": "3.1.1"
   },
   "license": "MIT",
+  "main": "./src/index.js",
   "private": true,
   "scripts": {
-    "prettier": "prettier --list-different --write \"**/*.{css,html,js,json,md,mjs,scss,ts,yaml}\"",
     "abdiel": "node ./abdiel.js",
+    "prettier": "prettier . --list-different --write",
     "test": "mocha"
   },
-  "bin": "./bin/index.js",
-  "main": "./src/index.js",
   "type": "module"
 }

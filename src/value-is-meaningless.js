@@ -1,4 +1,5 @@
 "use strict"
+
 /**
  * Checks if the given value is considered meaningless, specifically if it is
  * `undefined`, `null`, `NaN`, or an empty string.
