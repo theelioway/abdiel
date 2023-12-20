@@ -8,7 +8,7 @@ function freezeDate() {
 }
 let originalDateNow = Date.now
 
-describe("Freeze Dates in Tests Example", () => {
+describe("freeze dates in tests example", () => {
   beforeEach(() => {
     Date.now = freezeDate
   })

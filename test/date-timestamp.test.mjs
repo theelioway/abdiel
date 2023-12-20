@@ -4,7 +4,7 @@ import dateTimestamp from "../src/date-timestamp.js"
 
 should()
 
-describe("dateTimestamp", () => {
+describe("date | dateTimestamp", () => {
   it("converts a Date object to a timestamp string", () => {
     // Create a Date object for a specific date and time
     const testDate = new Date("2023-12-17T16:54:01.234Z")
