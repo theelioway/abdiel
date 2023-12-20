@@ -1,5 +1,5 @@
 # abdiel Prerequisites
 
-- [theElioWay prerequisites](/theElioWay/prerequisites.html)
+- [theElioWay Prerequisites](../../doc/prerequisites.html)
 
 None.

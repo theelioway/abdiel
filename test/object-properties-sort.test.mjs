@@ -1,10 +1,10 @@
 "use strict"
 import { should } from "chai"
-import objectPropertiesSort from "../src/object-sort-properties.js"
+import objectSortProperties from "../src/object-sort-properties.js"
 
 should()
 
-describe("array | objectPropertiesSort", () => {
+describe("array | objectSortProperties", () => {
   it("works as expected", () => {
     const person = {
       name: "Alice",
@@ -14,7 +14,7 @@ describe("array | objectPropertiesSort", () => {
       job: "Engineer",
       mort: "Hoodoo",
     }
-    objectPropertiesSort(person).should.be.eql({
+    objectSortProperties(person).should.be.eql({
       Serious: true,
       age: 30,
       job: "Engineer",

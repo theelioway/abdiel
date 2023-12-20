@@ -1,13 +1,12 @@
 {
-  "alternateName": "a javascript library, the elioWay",
-  "description": "A library of utility functions",
+  "description": "a javascript library, the elioWay",
   "disambiguatingDescription": "none with more zeal adored The Deity, and divine commands obeyed",
   "identifier": "abdiel",
   "mainEntityOfPage": "SoftwareSourceCode",
   "name": "@elioway/abdiel",
-  "sameAs": "https://thing.theElioWay.com/",
-  "subjectOf": "theElioWay",
-  "url": "https://abdiel.theElioWay.com",
+  "sameAs": "https://Angels.theElioWay.com/",
+  "subjectOf": "Angels",
+  "url": "https://abdiel.Angels.theElioWay.com",
   "SoftwareSourceCode": {
     "codeSampleType": "experimental",
     "targetProduct": "theElioWay"
@@ -15,22 +14,24 @@
   "WebPage": {
     "breadcrumb": [
       "elioway",
-      "theElioWay",
+      "elioangels",
       "abdiel"
     ]
   },
-  "bin": "./bin/index.js",
   "devDependencies": {
     "chai": "^4.3.10",
     "lodash-es": "^4.17.21",
     "mocha": "^10.2.0",
     "prettier": "3.1.1"
   },
+  "exports": {
+    ".": "./src/index.js",
+    "./promised": "./abdiel.js"
+  },
   "license": "MIT",
   "main": "./src/index.js",
   "private": true,
   "scripts": {
-    "abdiel": "node ./abdiel.js",
     "prettier": "prettier . --list-different --write",
     "test": "mocha"
   },

@@ -1,3 +1,12 @@
+/** A Javascript Library
+ * 
+ * @usage  
+ * >> import { arrayAlways, stringCaseKebab } from "@elioway/abdiel";
+ * >>
+ * >> console.assert(arrayAlways("AbdielLibrary") === ["AbdielLibrary"]) 
+ * >> console.assert(arrayAlways(["AbdielLibrary"]) === ["AbdielLibrary"]) 
+ * >> console.assert(stringCaseKebab("AbdielLibrary") === "abdiel-library") 
+*/
 export { arrayAlways } from "./array-always.js"
 export { arrayDifference } from "./array-difference.js"
 export { arraySortByProperty } from "./array-sort-by-property.js"

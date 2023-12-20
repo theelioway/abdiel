@@ -1,6 +1,7 @@
 # Installing abdiel
 
-- [abdiel Prerequisites](/theElioWay/abdiel/prerequisites.html)
+- [theElioWay Prerequisites](../../doc/prerequisites.html)
+- [abdiel Prerequisites](prerequisites.html)
 
 ```shell
 npm i @elioway/abdiel

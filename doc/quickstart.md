@@ -1,6 +1,6 @@
 # Quickstart abdiel
 
-- [abdiel Prerequisites](/theElioWay/abdiel/prerequisites.html)
+- [abdiel Prerequisites](./prerequisites.html)
 
 ## Nutshell
 
@@ -24,8 +24,8 @@ const { funcName } = require("@elioway/abdiel")
 ## Call
 
 ```javascript
-import { validateFormThingy } from "form-thingies"
 import { valueIsDate, valueIsMeaningful } from "@elioway/abdiel"
+import { validateFormThingy } from "./form-thingies.js"
 
 let validationResults = validateFormThingy(user, [
   ["firstName", valueIsMeaningful],

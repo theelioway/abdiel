@@ -15,10 +15,10 @@
  *   c: 3
  * };
  *
- * const sortedObject = objectPropertiesSort(inputObject);
+ * const sortedObject = objectSortProperties(inputObject);
  * // Example output: { a: 1, b: 2, c: 3 }
  */
-export const objectPropertiesSort = object =>
+export const objectSortProperties = object =>
   Object.keys(object)
     .sort(new Intl.Collator("en", { caseFirst: "lower" }).compare)
     .reduce((result, propName) => {
@@ -26,4 +26,4 @@ export const objectPropertiesSort = object =>
       return result
     }, {})
 
-export default objectPropertiesSort
+export default objectSortProperties
