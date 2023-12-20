@@ -16,7 +16,7 @@ npm run prettier
 
 ## What we expect from Contributors
 
-Improve or add functions. 
+Improve or add functions.
 
 It's important that your functions should be universal and focused on small, oft repeated requirements. This library will be used instead of **lodash**, **date-fns**, etc, to keep this **the elioWay** library as dependant-less as possible.
 
@@ -26,4 +26,4 @@ We expect people to implement more robust implementations of this design pattern
 
 Follow the patterns of functions we have already written.
 
-Write a good unit test for your function. 
+Write a good unit test for your function.
