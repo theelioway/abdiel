@@ -4,7 +4,8 @@
   <img src="star.png" alt="">
 </figure>
 
-> Abdiel, **the elioWay**
+> Nor stood unmindful Abdiel to annoy
+The atheist crew, **the elioWay**
 
 ![experimental](/eliosin/icon/devops/experimental/favicon.ico "experimental")
 
