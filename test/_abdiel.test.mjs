@@ -5,7 +5,7 @@ import abdiel from "../abdiel.js"
 should()
 
 describe("module | abdiel", () => {
-  it("all of abdiel without raising an error", async () => {
+  it("exports these functions", async () => {
     let oldab = await abdiel()
     Object.keys(oldab).should.be.eql([
       "arrayAlways",
@@ -15,8 +15,10 @@ describe("module | abdiel", () => {
       "arrayXor",
       "dateTimestamp",
       "objectAlways",
+      "objectClone",
       "objectPicker",
       "objectPruner",
+      "objectSortProperties",
       "stringCaseKebab",
       "valueIsArrayAndMeaningless",
       "valueIsDate",
