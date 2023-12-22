@@ -16,7 +16,7 @@ A library of utility functions:
 | `arrayXor` | array parts don't cancel |
 | `dateTimestamp` | format dates to filesafe timestamp string |
 | `objectAlways` | always return object with property |
-| `objectCloner` | parse stringify an object |
+| `objectClone` | parse stringify an object |
 | `objectPicker` | pick from object properties |
 | `objectPruner` | combine filter to prune an object entries |
 | `objectSortProperties` | sorts properties of an object alphabetically |

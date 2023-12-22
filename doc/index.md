@@ -5,7 +5,7 @@
 </figure>
 
 > Nor stood unmindful Abdiel to annoy
-The atheist crew, **the elioWay**
+> The atheist crew, **the elioWay**
 
 ![experimental](/eliosin/icon/devops/experimental/favicon.ico "experimental")
 
@@ -23,7 +23,7 @@ Not so much a replacement **lodash** as it is a smaller set of purposeful functi
 | `arrayXor` | array parts don't cancel |
 | `dateTimestamp` | format dates to filesafe timestamp string |
 | `objectAlways` | always return object with property |
-| `objectCloner` | parse stringify an object |
+| `objectClone` | parse stringify an object |
 | `objectPicker` | pick from object properties |
 | `objectPruner` | combine filter to prune an object entries |
 | `objectSortProperties` | sorts properties of an object alphabetically |

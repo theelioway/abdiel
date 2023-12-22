@@ -7,10 +7,10 @@
  * @returns {Object} Returns a deep copy of the input object.
  * @example
  * const originalObject = { address: { city: 'New York' } };
- * const clonedObject = objectCloner(originalObject);
+ * const clonedObject = objectClone(originalObject);
  * originalObject.address.city = "London";
  * console.assert(clonedObject.address.city === "New York")
  */
-export const objectCloner = object => JSON.parse(JSON.stringify(object))
+export const objectClone = object => JSON.parse(JSON.stringify(object))
 
-export default objectCloner
+export default objectClone

@@ -1,17 +1,17 @@
 "use strict"
 import { should } from "chai"
-import objectCloner from "../src/object-cloner.js"
+import objectClone from "../src/object-clone.js"
 
 should()
 
-describe("object | objectCloner", () => {
+describe("object | objectClone", () => {
   it("creates a deep clone that is independent of the original object", () => {
     const originalObject = {
       name: "Alice",
       age: 30,
       address: { city: "New York" },
     }
-    const clonedObject = objectCloner(originalObject)
+    const clonedObject = objectClone(originalObject)
 
     // Not the same object.
     clonedObject.should.not.equal(originalObject)
