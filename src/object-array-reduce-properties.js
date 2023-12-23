@@ -8,7 +8,7 @@
  * @param {Function} transformer - A function that takes a property object
  *                                 and transforms it in some way.
  * @returns {Function} Returns a reducer function that takes an accumulator
- *                     object and a `propertyElement` object. The reducer applies the
+ *                     object and a `entity` object. The reducer applies the
  *                     transformer function to the property and assigns the
  *                     result to the accumulator object using the property's
  *                     'id' as the key.
@@ -18,10 +18,9 @@
  * const doubledProperties = properties.reduce(reduceProperties(doubleValue), {});
  * // doubledProperties will be { a: 20, b: 40 }
  */
-export const objectArrayReduceProperties =
-  transformer => (acc, propertyElement) => {
-    acc[propertyElement.id] = transformer(propertyElement)
-    return acc
-  }
+export const objectArrayReduceProperties = transformer => (acc, entity) => {
+  acc[entity.id] = transformer(entity)
+  return acc
+}
 
 export default objectArrayReduceProperties
