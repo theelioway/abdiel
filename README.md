@@ -1,4 +1,4 @@
-![](https://elioway.gitlab.io/elioangels/abdiel/elio-abdiel-logo.png)
+![](./postcard.jpg)
 
 > none with more zeal adored The Deity, and divine commands obeyed, **the elioWay**
 
@@ -11,7 +11,7 @@ A library of utility functions:
 | ----------------------------- | --------------------------------------------------- |
 | `arrayAlways` | always an array |
 | `arrayDifference` | difference between arrays |
-| `arraySortByProperty` | returns a sort comparer given a prop name |
+| `objectArraySortByProperty` | returns a sort comparer given a prop name |
 | `arrayUnion` | overlap between arrays |
 | `arrayXor` | array parts don't cancel |
 | `dateTimestamp` | format dates to filesafe timestamp string |

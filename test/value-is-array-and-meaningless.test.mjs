@@ -6,7 +6,7 @@ should()
 
 const isNonZeroNumber = n => typeof n === "number" && n !== 0
 
-describe("value | valueIsArrayAndMeaningless", () => {
+describe("function | valueIsArrayAndMeaningless", () => {
   it("knows when an array is full of meaningless values", () => {
     const isArrayAndNonZeroNumber = valueIsArrayAndMeaningless(isNonZeroNumber)
     isArrayAndNonZeroNumber([]).should.be.true

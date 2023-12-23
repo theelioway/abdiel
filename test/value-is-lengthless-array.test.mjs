@@ -4,7 +4,7 @@ import valueIsLengthlessArray from "../src/value-is-lengthless-array.js"
 
 should()
 
-describe("value | valueIsLengthlessArray", () => {
+describe("function | valueIsLengthlessArray", () => {
   it("knows when an array with things in it or not", () => {
     valueIsLengthlessArray([]).should.be.true
     valueIsLengthlessArray([,]).should.be.false

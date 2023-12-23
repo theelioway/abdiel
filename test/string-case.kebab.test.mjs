@@ -4,7 +4,7 @@ import stringCaseKebab from "../src/string-case-kebab.js"
 
 should()
 
-describe("string | stringCaseKebab", () => {
+describe("function | stringCaseKebab", () => {
   it("converts a string to kebab-case", () => {
     const inputString = "Hello World Example"
     const kebabCaseString = stringCaseKebab(inputString)

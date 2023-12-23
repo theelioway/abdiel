@@ -5,7 +5,7 @@ should()
 
 const value = undefined
 
-describe("expecting `undefined` test", () => {
+describe("should | be `undefined` test", () => {
   it("crashes testing `undefined.should`", () => {
     try {
       // You cannot do this, even though it is documented.

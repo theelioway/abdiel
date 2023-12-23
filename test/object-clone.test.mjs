@@ -4,7 +4,7 @@ import objectClone from "../src/object-clone.js"
 
 should()
 
-describe("object | objectClone", () => {
+describe("function | objectClone", () => {
   it("creates a deep clone that is independent of the original object", () => {
     const originalObject = {
       name: "Alice",

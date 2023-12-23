@@ -4,7 +4,7 @@ import valueIsDate from "../src/value-is-date.js"
 
 should()
 
-describe("value | valueIsDate", () => {
+describe("function | valueIsDate", () => {
   it("can recognise a real date object when it can see it", () => {
     valueIsDate(new Date()).should.be.true
     valueIsDate(new Date("2021-01-01")).should.be.true

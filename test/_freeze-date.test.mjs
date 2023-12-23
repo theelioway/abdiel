@@ -1,6 +1,4 @@
-"use strict"
 import { should } from "chai"
-
 should()
 
 function freezeDate() {
@@ -8,7 +6,7 @@ function freezeDate() {
 }
 let originalDateNow = Date.now
 
-describe("freeze dates in tests example", () => {
+describe("date | example: freeze dates in tests", () => {
   beforeEach(() => {
     Date.now = freezeDate
   })

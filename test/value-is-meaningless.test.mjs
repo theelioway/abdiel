@@ -4,7 +4,7 @@ import valueIsMeaningless from "../src/value-is-meaningless.js"
 
 should()
 
-describe("value | valueIsMeaningless", () => {
+describe("function | valueIsMeaningless", () => {
   it("discerns meaning in some values", () => {
     valueIsMeaningless(false).should.be.false
     valueIsMeaningless(0).should.be.false

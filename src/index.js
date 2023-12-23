@@ -9,11 +9,12 @@
  */
 export { arrayAlways } from "./array-always.js"
 export { arrayDifference } from "./array-difference.js"
-export { arraySortByProperty } from "./array-sort-by-property.js"
 export { arrayUnion } from "./array-union.js"
 export { arrayXor } from "./array-xor.js"
 export { dateTimestamp } from "./date-timestamp.js"
 export { objectAlways } from "./object-always.js"
+export { objectArrayReduceProperties } from "./object-array-reduce-properties.js"
+export { objectArraySortByProperty } from "./object-array-sort-by-property.js"
 export { objectClone } from "./object-clone.js"
 export { objectPicker } from "./object-picker.js"
 export { objectPruner } from "./object-pruner.js"

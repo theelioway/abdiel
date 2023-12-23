@@ -4,7 +4,7 @@ import valueToImpliedType from "../src/value-to-implied-type.js"
 
 should()
 
-describe("value | valueToImpliedType", () => {
+describe("function | valueToImpliedType", () => {
   it("returns a suitable blank", () => {
     should().equal(valueToImpliedType(), undefined)
     valueToImpliedType("").should.eql("")

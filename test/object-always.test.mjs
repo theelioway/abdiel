@@ -4,7 +4,7 @@ import objectAlways from "../src/object-always.js"
 
 should()
 
-describe("object | objectAlways", () => {
+describe("function | objectAlways", () => {
   it("returns the value if no object with property", () => {
     let propObject = objectAlways("prop")
     propObject(0).should.be.eql(0)

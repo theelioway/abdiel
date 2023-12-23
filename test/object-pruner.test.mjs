@@ -19,7 +19,7 @@ const PERSON = {
   list2: [3],
 }
 
-describe("array | objectPruner", () => {
+describe("function | objectPruner", () => {
   it("prunes boolean", () => {
     const pruneFalsy = objectPruner(([_, value]) => Boolean(value))
     pruneFalsy(PERSON).should.be.eql({

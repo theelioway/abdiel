@@ -4,7 +4,7 @@ import valueIsMeaningfullyFalsy from "../src/value-is-meaningfully-falsy.js"
 
 should()
 
-describe("value | valueIsMeaningfullyFalsy", () => {
+describe("function | valueIsMeaningfullyFalsy", () => {
   it("understands some falsy values contain meaning", () => {
     valueIsMeaningfullyFalsy(0).should.be.true
     valueIsMeaningfullyFalsy(false).should.be.true

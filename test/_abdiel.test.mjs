@@ -10,11 +10,12 @@ describe("module | abdiel", () => {
     Object.keys(oldab).should.be.eql([
       "arrayAlways",
       "arrayDifference",
-      "arraySortByProperty",
       "arrayUnion",
       "arrayXor",
       "dateTimestamp",
       "objectAlways",
+      "objectArrayReduceProperties",
+      "objectArraySortByProperty",
       "objectClone",
       "objectPicker",
       "objectPruner",

@@ -1,6 +1,6 @@
 "use strict"
 import { should } from "chai"
-import arraySortByProperty from "../src/array-sort-by-property.js"
+import objectArraySortByProperty from "../src/object-array-sort-by-property.js"
 
 should()
 
@@ -11,16 +11,16 @@ const ARRAY = [
   { fWord: 3, sWord: 2, f: "c", s: "h" },
 ]
 
-describe("array | arraySortByProperty", () => {
+describe("function | objectArraySortByProperty", () => {
   it("sorts `ARRAY` by property `fWord`", () => {
-    const sortByFWord = arraySortByProperty("fWord")
+    const sortByFWord = objectArraySortByProperty("fWord")
     ARRAY.sort(sortByFWord)
       .map(({ f }) => f)
       .join("")
       .should.eql("fuck")
   })
   it("sorts `ARRAY` by property `sWord`", () => {
-    const sortByFWord = arraySortByProperty("sWord")
+    const sortByFWord = objectArraySortByProperty("sWord")
     ARRAY.sort(sortByFWord)
       .map(({ s }) => s)
       .join("")

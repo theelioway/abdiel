@@ -58,7 +58,7 @@ let xorTests = [
 
 let speedTests = 5000
 
-describe("array | arrayXor lodash comparison", () => {
+describe("function | arrayXor lodash comparison", () => {
   it("`arrayXor` same as lodash ` union(difference,difference)`", () => {
     for (let [l1, l2] of xorTests) {
       let abdielRes = arrayXor(l1, l2)
@@ -68,7 +68,7 @@ describe("array | arrayXor lodash comparison", () => {
   })
 })
 
-describe("array | arrayXor", () => {
+describe("function | arrayXor", () => {
   for (let [l1, l2, expectarrayXor] of xorTests) {
     it(`arrayXor either way ${l1} + ${l2} == ${expectarrayXor}`, () => {
       let res = arrayXor(l1, l2)
@@ -77,7 +77,7 @@ describe("array | arrayXor", () => {
   }
 })
 
-describe("array | arrayXor", () => {
+describe("function | arrayXor", () => {
   it("arrayXor faster than lodash", () => {
     let stamp = Date.now()
     for (let i = 0; i < speedTests; i++) {

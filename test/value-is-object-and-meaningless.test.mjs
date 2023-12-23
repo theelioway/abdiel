@@ -4,7 +4,7 @@ import valueIsObjectAndMeaningless from "../src/value-is-object-and-meaningless.
 
 should()
 
-describe("value | isObjectWithOnlyEmptyStrings", () => {
+describe("function | isObjectWithOnlyEmptyStrings", () => {
   it("checks whether object of meaningless propeties", () => {
     const isNonEmptyString = s => typeof s === "string" && s.trim() !== ""
     const isObjectAndNonEmptyString =

@@ -4,7 +4,7 @@ import objectSortProperties from "../src/object-sort-properties.js"
 
 should()
 
-describe("array | objectSortProperties", () => {
+describe("function | objectSortProperties", () => {
   it("works as expected", () => {
     const person = {
       name: "Alice",

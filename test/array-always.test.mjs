@@ -4,7 +4,7 @@ import arrayAlways from "../src/array-always.js"
 
 should()
 
-describe("array | arrayAlways", () => {
+describe("function | arrayAlways", () => {
   it("always returns an array", () => {
     arrayAlways(0).should.be.instanceOf(Array).eql([0])
     arrayAlways(0).should.be.instanceOf(Array).eql([0]) // zero number array

@@ -4,7 +4,7 @@ import objectPicker from "../src/object-picker.js"
 
 should()
 
-describe("array | objectPicker", () => {
+describe("function | objectPicker", () => {
   it("works as expected", () => {
     const pickNameAndAge = objectPicker(["name", "age"])
     const person = { name: "Alice", age: 30, job: "Engineer" }

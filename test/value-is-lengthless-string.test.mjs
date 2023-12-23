@@ -4,7 +4,7 @@ import valueIsLengthlessString from "../src/value-is-lengthless-string.js"
 
 should()
 
-describe("value | valueIsLengthlessString", () => {
+describe("function | valueIsLengthlessString", () => {
   it("picks strings with no meaning", () => {
     valueIsLengthlessString("").should.be.true
     valueIsLengthlessString("   ").should.be.true

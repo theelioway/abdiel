@@ -22,7 +22,7 @@ let unionTests = [
 
 let speedTests = 11111
 
-describe("array | arrayUnion lodash comparison", () => {
+describe("function | arrayUnion lodash comparison", () => {
   it("`arrayUnion` same as lodash `union`", () => {
     for (let [l1, l2] of unionTests) {
       let abdielRes = arrayUnion(l1, l2)
@@ -32,7 +32,7 @@ describe("array | arrayUnion lodash comparison", () => {
   })
 })
 
-describe("array | arrayUnion", () => {
+describe("function | arrayUnion", () => {
   for (let [l1, l2, expectUnity] of unionTests) {
     it(`totally united ${l1} + ${l2} == ${expectUnity}`, () => {
       let res = arrayUnion(l1, l2)
@@ -53,7 +53,7 @@ describe("lodash | array | union", () => {
   })
 })
 
-describe("utils | arrayUnion", () => {
+describe("function | arrayUnion", () => {
   it("tis faster", () => {
     let stamp = Date.now()
     for (let i = 0; i < speedTests; i++) {

@@ -4,7 +4,7 @@ import valueToStringIsLengthless from "../src/value-tostring-is-lengthless.js"
 
 should()
 
-describe("value | valueToStringIsLengthless", () => {
+describe("function | valueToStringIsLengthless", () => {
   it("safely checks whether `value.toString()` is lengthless", () => {
     valueToStringIsLengthless().should.be.true
     valueToStringIsLengthless(null).should.be.true

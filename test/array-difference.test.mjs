@@ -43,7 +43,7 @@ let differenceTests = [
 
 let speedTests = 11111
 
-describe("array | arrayDifference lodash comparison", () => {
+describe("function | arrayDifference lodash comparison", () => {
   it("`arrayDifference` same as lodash `difference`", () => {
     for (let [l1, l2] of differenceTests) {
       let abdielRes = arrayDifference(l1, l2)
@@ -53,7 +53,7 @@ describe("array | arrayDifference lodash comparison", () => {
   })
 })
 
-describe("array | arrayDifference", () => {
+describe("function | arrayDifference", () => {
   for (let [l1, l2, expectDifference] of differenceTests) {
     it(`spots whats missing in l2 ${l1} / ${l2} == ${expectDifference}`, () => {
       let res = arrayDifference(l1, l2)
@@ -74,7 +74,7 @@ describe("lodash | array | difference", () => {
   })
 })
 
-describe("array | arrayDifference", () => {
+describe("function | arrayDifference", () => {
   it("tis faster", () => {
     let stamp = Date.now()
     for (let i = 0; i < speedTests; i++) {

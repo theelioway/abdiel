@@ -18,7 +18,7 @@ Not so much a replacement **lodash** as it is a smaller set of purposeful functi
 | ----------------------------- | --------------------------------------------------- |
 | `arrayAlways` | always an array |
 | `arrayDifference` | difference between arrays |
-| `arraySortByProperty` | returns a sort comparer given a prop name |
+| `objectArraySortByProperty` | returns a sort comparer given a prop name |
 | `arrayUnion` | overlap between arrays |
 | `arrayXor` | array parts don't cancel |
 | `dateTimestamp` | format dates to filesafe timestamp string |

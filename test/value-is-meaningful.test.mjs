@@ -4,7 +4,7 @@ import valueIsMeaningful from "../src/value-is-meaningful.js"
 
 should()
 
-describe("value | valueIsMeaningful", () => {
+describe("function | valueIsMeaningful", () => {
   it("understands what is meaningful", () => {
     valueIsMeaningful(0).should.be.true // zero is considered meaningful
     valueIsMeaningful(1).should.be.true // non-zero number is meaningful
