@@ -1,4 +1,5 @@
 "use strict"
+import {valueIsMeaningful} from "./value-is-meaningful.js"
 
 /**
  * Creates a deep clone of an object by serializing it to JSON and then parsing it.
@@ -11,6 +12,6 @@
  * originalObject.address.city = "London";
  * console.assert(clonedObject.address.city === "New York")
  */
-export const jsonClone = object => JSON.parse(JSON.stringify(object))
+export const jsonClone = object => JSON.parse(JSON.stringify(valueIsMeaningful(object)?object:{}))
 
 export default jsonClone

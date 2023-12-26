@@ -5,6 +5,19 @@ import jsonClone from "../src/json-clone.js"
 should()
 
 describe("function | jsonClone", () => {
+  it("handles undefined", () => {
+    jsonClone().should.eql({})
+    jsonClone(undefined).should.eql({})
+    jsonClone(null).should.eql({})
+    jsonClone("").should.eql({})
+  })
+  it("handles meaningful primitives", () => {
+    jsonClone(false).should.eql(false)
+    jsonClone(true).should.eql(true)
+    jsonClone(0).should.eql(0)
+    jsonClone(1).should.eql(1)
+    jsonClone("1").should.eql("1")
+  })
   it("creates a deep clone that is independent of the original object", () => {
     const originalObject = {
       name: "Alice",
