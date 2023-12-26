@@ -18,8 +18,10 @@ export { default as objectAlways } from "./object-always.js"
 export { default as objectArraySortByProperty } from "./object-array-sort-by-property.js"
 export {
   objectDotNotated,
-  objectDotNotatedGetter,
-  objectDotNotatedSetter,
+  objectDotNotatedClip,
+  objectDotNotatedGet,
+  objectDotNotatedPick,
+  objectDotNotatedSet,
 } from "./object-dot-notated.js"
 export { default as objectPick } from "./object-pick.js"
 export { default as objectPrune } from "./object-prune.js"
