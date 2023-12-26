@@ -23,9 +23,9 @@ Not so much a replacement **lodash** as it is a smaller set of purposeful functi
 | `arrayXor` | array parts don't cancel |
 | `dateTimestamp` | format dates to filesafe timestamp string |
 | `objectAlways` | always return object with property |
-| `objectClone` | parse stringify an object |
-| `objectPicker` | pick from object properties |
-| `objectPruner` | combine filter to prune an object entries |
+| `jsonClone` | parse stringify an object |
+| `objectPick` | pick from object properties |
+| `objectPrune` | combine filter to prune an object entries |
 | `objectSortProperties` | sorts properties of an object alphabetically |
 | `stringCaseKebab` | format string kebab-case |
 | `valueIsArrayAndMeaningless` | true if all array values effectively undefined |

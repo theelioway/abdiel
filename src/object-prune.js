@@ -10,11 +10,11 @@
  * @example
  * const person = { name: 'Alice', age: 30, job: 'Engineer' };
  * const ageFilter = ([propName, value]) => propName === 'age';
- * const agePruner = objectPruner(ageFilter);
+ * const agePruner = objectPrune(ageFilter);
  * const prunedObject = agePruner(person); // { age: 30 }
  */
 
-export const objectPruner = filterEntries => object =>
+export const objectPrune = filterEntries => object =>
   Object.fromEntries(Object.entries(object).filter(filterEntries))
 
-export default objectPruner
+export default objectPrune
