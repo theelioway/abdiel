@@ -11,7 +11,7 @@
  * const pickedObject = pickNameAndAge(person); // { name: 'Alice', age: 30 }
  */
 export const objectPick = propertyNames => object =>
-  propertyNames.reduce(
+  propertyNames.filter(propName=>object.hasOwnProperty(propName)).reduce(
     (acc, propName) =>
       new Object({
         ...acc,

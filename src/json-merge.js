@@ -3,6 +3,7 @@ import { jsonClone } from "./json-clone.js"
 import { valueIsMeaningful } from "./value-is-meaningful.js"
 
 export const jsonMerge = (target, source) => {
+  
   for (const key in source) {
     if (source.hasOwnProperty(key)) {
       if (Array.isArray(source[key])) {
@@ -16,7 +17,7 @@ export const jsonMerge = (target, source) => {
           target[key] = jsonClone(source[key])
         }
       } else {
-        target[key] = valueIsMeaningful(source[key]) ? source[key] : target[key]
+        target[key] = source[key]
       }
     }
   }

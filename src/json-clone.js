@@ -1,5 +1,6 @@
 "use strict"
-import { valueIsMeaningful } from "./value-is-meaningful.js"
+
+const notUndefined = (value) => value===undefined || value===null ? {} : value
 
 /**
  * Creates a deep clone of an object by serializing it to JSON and then parsing it.
@@ -12,7 +13,6 @@ import { valueIsMeaningful } from "./value-is-meaningful.js"
  * originalObject.address.city = "London";
  * console.assert(clonedObject.address.city === "New York")
  */
-export const jsonClone = object =>
-  JSON.parse(JSON.stringify(valueIsMeaningful(object) ? object : {}))
+export const jsonClone = object => JSON.parse(JSON.stringify(notUndefined(object)))
 
 export default jsonClone

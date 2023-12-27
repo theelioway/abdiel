@@ -9,7 +9,7 @@ describe("function | jsonClone", () => {
     jsonClone().should.eql({})
     jsonClone(undefined).should.eql({})
     jsonClone(null).should.eql({})
-    jsonClone("").should.eql({})
+    jsonClone("").should.eql("")
   })
   it("handles meaningful primitives", () => {
     jsonClone(false).should.eql(false)
