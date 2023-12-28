@@ -12,6 +12,12 @@ export { default as arrayDifference } from "./array-difference.js"
 export { default as arrayUnion } from "./array-union.js"
 export { default as arrayXor } from "./array-xor.js"
 export { default as dateTimestamp } from "./date-timestamp.js"
+export {
+  fsImportMetaUrlPath,
+  fsPathMustExist,
+  fsReadJson,
+  fsWriteJson,
+} from "./fs.js"
 export { default as jsonClone } from "./json-clone.js"
 export { default as jsonMerge } from "./json-merge.js"
 export { default as objectAlways } from "./object-always.js"

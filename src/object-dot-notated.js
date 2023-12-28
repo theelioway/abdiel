@@ -29,7 +29,10 @@ export const objectDotNotatedGet = (object, potentiallyDotNotatedPath) =>
  * // outputs { a: { c: 2 } }
  */
 export const objectDotNotatedClip = (object, potentiallyDotNotatedPath) =>
-  objectDotNotated(potentiallyDotNotatedPath, objectDotNotatedGet(object, potentiallyDotNotatedPath))
+  objectDotNotated(
+    potentiallyDotNotatedPath,
+    objectDotNotatedGet(object, potentiallyDotNotatedPath),
+  )
 
 /** Sets the given value located in the given "dot-notated" potentiallyDotNotatedPath of a given object.
  * @usage
@@ -47,8 +50,9 @@ export const objectDotNotatedSet = (object, potentiallyDotNotatedPath, value) =>
  * // outputs { a: { c: 2 }, d: { e: 3}, g: { h: 5 } }
  */
 export const objectDotNotatedPick = (object, potentiallyDotNotatedPaths) =>
-potentiallyDotNotatedPaths.reduce(
-    (acc, potentiallyDotNotatedPath) => jsonMerge(acc, objectDotNotatedClip(object, potentiallyDotNotatedPath)),
+  potentiallyDotNotatedPaths.reduce(
+    (acc, potentiallyDotNotatedPath) =>
+      jsonMerge(acc, objectDotNotatedClip(object, potentiallyDotNotatedPath)),
     {},
   )
 

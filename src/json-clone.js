@@ -1,6 +1,7 @@
 "use strict"
 
-const notUndefined = (value) => value===undefined || value===null ? {} : value
+const notUndefined = value =>
+  value === undefined || value === null ? {} : value
 
 /**
  * Creates a deep clone of an object by serializing it to JSON and then parsing it.
@@ -13,6 +14,7 @@ const notUndefined = (value) => value===undefined || value===null ? {} : value
  * originalObject.address.city = "London";
  * console.assert(clonedObject.address.city === "New York")
  */
-export const jsonClone = object => JSON.parse(JSON.stringify(notUndefined(object)))
+export const jsonClone = object =>
+  JSON.parse(JSON.stringify(notUndefined(object)))
 
 export default jsonClone

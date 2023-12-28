@@ -44,12 +44,18 @@ describe("json | jsonMerge", () => {
   it("should obey null and undefined values", () => {
     const obj1 = { a: 1, b: 2, c: [2, null, 3] }
     const obj2 = { a: undefined, b: null, c: [undefined, 0, 1] }
-    jsonMerge(obj1, obj2).should.deep.equal({ a: undefined, b: null, c: [2, 3, 0, 1] })
+    jsonMerge(obj1, obj2).should.deep.equal({
+      a: undefined,
+      b: null,
+      c: [2, 3, 0, 1],
+    })
   })
 
   it("handles merging to nested empty object", () => {
-    const obj1 = { SocialMediaPosting: { } }
-    const obj2 = { SocialMediaPosting: { sharedContent: '' } }    
-    jsonMerge(obj1, obj2).should.deep.equal({ SocialMediaPosting: { sharedContent: '' } })
+    const obj1 = { SocialMediaPosting: {} }
+    const obj2 = { SocialMediaPosting: { sharedContent: "" } }
+    jsonMerge(obj1, obj2).should.deep.equal({
+      SocialMediaPosting: { sharedContent: "" },
+    })
   })
 })
